@@ -30,9 +30,12 @@ let g:syntastic_check_on_wq = 0
 
 set nocompatible
 
+" go-def 配置
+" set g:godef_split=3
 " 语法高亮
 syntax on
-
+" 替换esc
+noremap jk <ESC>
 " 检测文件类型
 filetype on
 " 针对不同文件类型采用不同的缩进方式
@@ -356,8 +359,10 @@ let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
 let g:vimshell_popup_command = 'vsplit'
 
 " NERDTree settings
-map <C-z> :NERDTreeToggle<CR>
+map ff :NERDTreeToggle<CR>
 
+" "TlistToggle settings
+map zz :TagbarToggle<CR>
 " python-mode settings
 let g:pymode_run = 0
 let g:pymode_breakpoint = 0
